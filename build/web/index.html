@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Questão 04</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            Criar nova Media:
+            <br><br>
+            <form method="POST" action="Midias">
+                <br><br>           
+                Nome: <input type="text" name="Nome" required maxlength="512">
+                URL: <input type="text" name="URL" maxlength="512">
+                Duração(Somente numeros): <input type="text" name="Duracao" required maxlength="6" size="6">
+                <input type="submit" value="Adicionar">
+            </form>
+        </div>
+        <br><br>
+        <div>   
+            <form action="Midias">                     
+                Listar todas as midias: <input type="submit" value="Listar">
+                
+            </form>
+        </div>
+        <br><br>
+        <div>
+            Procurar midia:
+            <form action="Midias">
+                <br><br>           
+                Pesquisar (Somente numeros): <input type="text" required maxlength="6" size="6" name="Midia">
+                <input type="submit" value="Procurar">
+            </form>
+        </div>
+        <br><br>
+    </body>
+</html>
